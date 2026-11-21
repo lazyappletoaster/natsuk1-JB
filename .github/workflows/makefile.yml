@@ -14,10 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
-
-    - name: Install dependencies
+    - name: Build
       run: cd XMLFuzz && make ipa
            cd F1OOB-PoC && make ipa
            cd FastPoC && make ipa
